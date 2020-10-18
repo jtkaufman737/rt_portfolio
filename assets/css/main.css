@@ -1860,25 +1860,22 @@ button,
   width: 100%; }
   #main > .inner > section.pad {
     width:100%;}
-    #main > .inner > section {
-      padding: 6em 0 4em 0 ;
-      }
       #main > .inner > section:first-of-type {
         border-top: 0 !important; }
-  @media screen and (min-width:1680) {
-    #main {
-      padding: 9rem 9rem 4rem 9rem;
+  @media screen and (min-width:1680px) {
+    #main > .inner > section {
+      padding: 9rem 4rem 4rem 4rem;
     }
   }
   @media screen and (max-width: 1680px) {
     #main > .inner {
-      padding: 0 5em 0.1em 5em ; }
-      #main > .inner > section {
+      padding: 4rem ; }
+      #main > .inner > section.pad {
         padding: 5em 0 3em 0 ; } }
   @media screen and (max-width: 1280px) {
     #main > .inner {
       padding: 0 4em 0.1em 4em ; }
-      #main > .inner > section {
+      #main > .inner > section.pad {
         padding: 3em 0 2em 0 ; } }
   @media screen and (max-width: 736px) {
     #main > .inner {
@@ -1887,7 +1884,7 @@ button,
     }
       #main > .inner > section.pad {
         padding: 2rem; }
-  }
+    }
 
 /* Sidebar */
 #search form {
@@ -2131,7 +2128,7 @@ button,
 /* Banner */
 #banner {
   width:100%;
-  padding: 3rem;
+  /* padding: 3rem; */
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
